@@ -5,10 +5,8 @@ import com.asmb.training.models.Book;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
-import org.springframework.cache.annotation.Caching;
 import org.springframework.stereotype.Service;
 
-import javax.swing.text.html.Option;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
@@ -18,10 +16,6 @@ import java.util.Optional;
 @Service
 public class BookFinderImpl implements BookFinderInterface{
 
-
-    private static final Integer DEFAULT_HOUR = 0;
-    private static final Integer DEFAULT_MINUTE = 0;
-    private static final Integer DEFAULT_SECOND = 0;
 
     private BookRepository bookRepository;
 
